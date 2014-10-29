@@ -1,4 +1,4 @@
 if [ -n "$BREW_PREFIX" ]; then
-  MANPATH="${BREW_PREFIX}/opt/coreutils/libexec/gnuman:$MANPATH"
-  PATH="${BREW_PREFIX}/opt/coreutils/libexec/gnubin:$PATH"
+  manpath[1,0]="$BREW_PREFIX/opt/coreutils/libexec/gnuman"
+  path[1,0]="$BREW_PREFIX/opt/coreutils/libexec/gnubin"
 fi
